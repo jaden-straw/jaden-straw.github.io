@@ -5,6 +5,7 @@ canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
 let particlesArray;
+let animationFrameId;
 
 class Particle {
     constructor(x, y, directionX, directionY, size, color) {
@@ -40,11 +41,22 @@ class Particle {
 
 function init() {
     particlesArray = [];
-    let numParticles = (canvas.height * canvas.width) / 9000;
+    
+    // Check if device is mobile
+    const isMobile = window.innerWidth <= 768;
+    
+    // Adjust divisor based on device type to control particle count
+    // Higher divisor = fewer particles
+    const divisor = isMobile ? 15000 : 9000;
+    
+    // Calculate number of particles based on canvas size and device type
+    let numParticles = Math.min((canvas.height * canvas.width) / divisor, 100);
+    
     for (let i = 0; i < numParticles; i++) {
         let size = Math.random() * 4 + 2;
-        let x = (Math.random() * ((innerWidth - size * 2) - (size * 2)) + size * 2);
-        let y = (Math.random() * ((innerHeight - size * 2) - (size * 2)) + size * 2);
+        // Use canvas dimensions instead of window dimensions for consistency
+        let x = (Math.random() * ((canvas.width - size * 2) - (size * 2)) + size * 2);
+        let y = (Math.random() * ((canvas.height - size * 2) - (size * 2)) + size * 2);
         let directionX = Math.random() * 2 - 1;
         let directionY = (Math.random() * 2) - 1;
         let color = '#c8c8c8';
@@ -73,8 +85,8 @@ function connect() {
 }
 
 function animate() {
-    requestAnimationFrame(animate);
-    ctx.clearRect(0, 0, innerWidth, innerWidth);
+    animationFrameId = requestAnimationFrame(animate);
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
 
     for (let i = 0; i < particlesArray.length; i++) {
         particlesArray[i].update();
@@ -83,10 +95,21 @@ function animate() {
 }
 
 window.addEventListener("resize", () => {
+    // Cancel the previous animation frame to prevent multiple animations
+    if (animationFrameId) {
+        cancelAnimationFrame(animationFrameId);
+    }
+    
+    // Resize canvas
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
+    
+    // Reinitialize particles
     init();
-})
+    
+    // Restart animation
+    animate();
+});
 
 init();
 animate();
