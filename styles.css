@@ -49,7 +49,7 @@ body {
 
 .resume-section {
     min-height: 100vh;
-    padding: 4rem;
+    padding: 5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;

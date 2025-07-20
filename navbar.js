@@ -1,7 +1,7 @@
 const navbar = document.getElementById("navbar1");
 
 window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
+    if (window.scrollY > 10) {
         navbar.classList.add("bg-solid");
         navbar.classList.remove("bg-transparent");
     } else {
