@@ -46,7 +46,7 @@ body {
 
 .nav-link {
     font-weight: bold;
-    color: rgb(230, 230, 230);
+    color: rgb(230, 230, 230) !important;
 }
 
 .resume-section {
@@ -110,6 +110,10 @@ h4 {
 .list-group-item {
     background-color: rgb(230, 230, 230) !important;
     color: black;
+}
+
+.list-group-item:hover {
+    background-color: rgb(225, 225, 225) !important;
 }
 
 .card:hover {
