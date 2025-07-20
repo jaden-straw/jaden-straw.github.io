@@ -5,6 +5,7 @@
     <title>Jaden Straw</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="./styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body class="">
@@ -16,20 +17,20 @@
     <nav id="navbar1" class="navbar fixed-top bg-transparent">
         <div class="container-fluid">
             <div class="navbar-brand">
-                <a class="nav-link text-light" href="#home">Jaden Straw</a>
+                <a class="nav-link" href="#home">Jaden Straw</a>
             </div>
             <ul class="nav nav-underline">
                 <li class="nav-item">
-                    <a class="nav-link text-light" href="#aboutme">ABOUT ME</a>
+                    <a class="nav-link" href="#aboutme">ABOUT ME</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-light" href="#education">EDUCATION</a>
+                    <a class="nav-link" href="#education">EDUCATION</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-light" href="#experience">WORK EXPERIENCE</a>
+                    <a class="nav-link" href="#experience">WORK EXPERIENCE</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-light" href="#skills">SKILLS</a>
+                    <a class="nav-link" href="#skills">SKILLS</a>
                 </li>
             </ul>
         </div>
@@ -37,13 +38,12 @@
     <script src="navbar.js"></script>
 
     <div data-bs-spy="scroll" data-bs-target="#_navbar" data-bs-offset="0" class="scrollspy-example" tabindex="0">
-
         <section id="home" class="resume-section">
             <div class="profile-img pb-2">
                 <img src="images/profile.jpg" alt="profile" class="img-fluid rounded-circle mx-auto d-block">
             </div>
-            <h1 class="fw-bold w-100 text-center">Jaden Straw</h1>
-            <p class="text-center text-light">Aspiring Software Engineer</p>
+            <h1 id="name" class="fw-bold text-center">Jaden Straw</h1>
+            <h5 id="title" class="text-center mb-3">Aspiring Software Engineer</h5>
 
             <div class="wrapper text-center">
                 <a href="https://github.com/jaden-straw" class="text-dark">
@@ -62,13 +62,12 @@
                 </a>
             </div>
         </section>
-
         <section id="aboutme" class="resume-section w-100">
             <h4 class="text-center mb-4">ABOUT ME</h4>
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-md-6 mb-4">
-                        <div class="card bg-light text-dark">
+                        <div class="card">
                             <div class="card-body">
                                 <p class="card-text">
                                     I am an aspiring, motivated, and detail-oriented software engineer with a passion
@@ -89,13 +88,12 @@
                 </div>
             </div>
         </section>
-
         <section id="education" class="resume-section w-100">
             <h4 class="text-center mb-4">EDUCATION</h4>
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 mb-4 mx-auto">
-                        <div class="card bg-light text-dark">
+                        <div class="card">
                             <div class="card-body">
                                 <h5 class="card-title">BSc Information Technology</h5>
                                 <h6 class="card-subtitle mb-2 text-muted">North-West University</h6>
@@ -120,13 +118,12 @@
                 </div>
             </div>
         </section>
-
         <section id="experience" class="resume-section w-100">
             <h4 class="text-center mb-4">WORK EXPERIENCE</h4>
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 mb-4">
-                        <div class="card bg-light text-dark h-100">
+                        <div class="card h-100">
                             <div class="card-body">
                                 <h5 class="card-title">Web Developer Intern</h5>
                                 <h6 class="card-subtitle mb-2 text-muted">Stratusolve (Pty) Ltd</h6>
@@ -140,7 +137,7 @@
                         </div>
                     </div>
                     <div class="col-md-6 mb-4">
-                        <div class="card bg-light text-dark h-100">
+                        <div class="card h-100">
                             <div class="card-body">
                                 <h5 class="card-title">Freelance Projects</h5>
                                 <ul class="card-text">
@@ -154,106 +151,87 @@
                 </div>
             </div>
         </section>
-
         <section id="skills" class="resume-section w-100">
             <h4 class="text-center mb-4">SKILLS</h4>
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 mb-4">
-                        <div class="card bg-light text-dark h-100">
+                        <div class="card h-100">
                             <div class="card-header text-center">
                                 Programming Languages
                             </div>
                             <div class="card-body">
                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item bg-light text-dark">Python</li>
-                                    <li class="list-group-item bg-light text-dark">Java</li>
-                                    <li class="list-group-item bg-light text-dark">JavaScript/ TypeScript</li>
-                                    <li class="list-group-item bg-light text-dark">C#</li>
+                                    <li class="list-group-item">Python</li>
+                                    <li class="list-group-item">Java</li>
+                                    <li class="list-group-item">JavaScript/ TypeScript</li>
+                                    <li class="list-group-item">C#</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 mb-4">
-                        <div class="card bg-light text-dark h-100">
+                        <div class="card h-100">
                             <div class="card-header text-center">
                                 Frameworks & Libraries
                             </div>
                             <div class="card-body">
                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item bg-light text-dark">Django Rest</li>
-                                    <li class="list-group-item bg-light text-dark">Spring Boot (on-going)</li>
-                                    <li class="list-group-item bg-light text-dark">SvelteKit</li>
-                                    <li class="list-group-item bg-light text-dark">NodeJS/ Express</li>
+                                    <li class="list-group-item">Django Rest</li>
+                                    <li class="list-group-item">Spring Boot (on-going)</li>
+                                    <li class="list-group-item">SvelteKit</li>
+                                    <li class="list-group-item">NodeJS/ Express</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 mb-4">
-                        <div class="card bg-light text-dark h-100">
+                        <div class="card h-100">
                             <div class="card-header text-center">
                                 Database Design & Management
                             </div>
                             <div class="card-body">
                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item bg-light text-dark">PostgreSQL</li>
-                                    <li class="list-group-item bg-light text-dark">MySQL</li>
-                                    <li class="list-group-item bg-light text-dark">Microsoft SQL Server</li>
-                                    <li class="list-group-item bg-light text-dark">Redis</li>
+                                    <li class="list-group-item">PostgreSQL</li>
+                                    <li class="list-group-item">MySQL</li>
+                                    <li class="list-group-item">Microsoft SQL Server</li>
+                                    <li class="list-group-item">Redis</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
-
                 <div class="row justify-content-center">
                     <div class="col-md-4 mb-4">
-                        <div class="card bg-light text-dark h-100">
+                        <div class="card h-100">
                             <div class="card-header text-center">
                                 Cloud Services
                             </div>
                             <div class="card-body">
                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item bg-light text-dark">Microsoft Azure</li>
-                                    <li class="list-group-item bg-light text-dark">Google Cloud SQL</li>
+                                    <li class="list-group-item">Microsoft Azure</li>
+                                    <li class="list-group-item">Google Cloud SQL</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 mb-4">
-                        <div class="card bg-light text-dark h-100">
+                        <div class="card h-100">
                             <div class="card-header text-center">
                                 Automation & Tools
                             </div>
                             <div class="card-body">
                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item bg-light text-dark">Excel (Expert)</li>
-                                    <li class="list-group-item bg-light text-dark">Slack Integration</li>
-                                    <li class="list-group-item bg-light text-dark">Web Scraping with Beautiful Soup 4 & Selenium</li>
+                                    <li class="list-group-item">Excel (Expert)</li>
+                                    <li class="list-group-item">Slack Integration</li>
+                                    <li class="list-group-item">Web Scraping with Beautiful Soup 4 & Selenium</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-<!--                    <div class="col-md-4 mb-4">-->
-<!--                        <div class="card bg-light text-dark h-100">-->
-<!--                            <div class="card-header text-center">-->
-<!--                                Database Design & Management-->
-<!--                            </div>-->
-<!--                            <div class="card-body">-->
-<!--                                <ul class="list-group list-group-flush">-->
-<!--                                    <li class="list-group-item bg-light text-dark">PostgreSQL</li>-->
-<!--                                    <li class="list-group-item bg-light text-dark">MySQL</li>-->
-<!--                                    <li class="list-group-item bg-light text-dark">Microsoft SQL Server</li>-->
-<!--                                    <li class="list-group-item bg-light text-dark">Redis</li>-->
-<!--                                </ul>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
                 </div>
             </div>
         </section>
-
     </div>
-
 </body>
 </html>
