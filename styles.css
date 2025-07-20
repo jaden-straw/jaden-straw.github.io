@@ -2,24 +2,35 @@ html {
     scroll-behavior: smooth;
 }
 
-.bg-container {
-    /*background-image: linear-gradient(to bottom right, black, darkblue);*/
-    background: linear-gradient(55deg, black, darkblue);
-    height: 3500px;
+.fixed-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: linear-gradient(to bottom right, #000019, #000049, #000019);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-#header {
-    padding-top: 60px; /* Add padding to push header below the navbar */
+.resume-section {
+    min-height: 100vh;
+    padding: 4rem;
 }
 
-#scrollspyHeading1 {
-    height: 1000px;
+.profile-img {
+    width: 100%;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-#scrollspyHeading2 {
-    height: 1000px;
+h1 {
+    color: white;
 }
 
-#scrollspyHeading3 {
-    height: 1000px;
+h4 {
+    color: white;
 }

@@ -2,40 +2,56 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Jaden Straw</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <div class="bg-container">
-        <nav id="_navbar" class="navbar bg-light justify-content-center fixed-top bg-transparent">
+<!--    <script src="js/bootstrap.bundle.min.js"></script>-->
+
+    <div class="fixed-bg"></div>
+
+    <nav id="_navbar" class="navbar bg-light fixed-top bg-transparent">
+        <div class="container-fluid">
+            <div class="navbar-brand">
+                <a class="nav-link text-light" href="#scrollspyHeading1">Jaden Straw</a>
+            </div>
             <ul class="nav nav-underline">
                 <li class="nav-item">
-                    <a class="nav-link" href="#scrollspyHeading1">About</a>
+                    <a class="nav-link text-light" href="#scrollspyHeading2">ABOUT ME</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#scrollspyHeading2">Experience</a>
+                    <a class="nav-link text-light" href="#scrollspyHeading3">PORTFOLIO</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#scrollspyHeading3">Education</a>
+                    <a class="nav-link text-light" href="#scrollspyHeading4">EDUCATION</a>
                 </li>
             </ul>
-        </nav>
-        <header id="header" class="w-100 text-center">
-            <h1 class="fw-bold">Jaden Straw</h1>
-        </header>
-        <div data-bs-spy="scroll" data-bs-target="_navbar" data-bs-offset="0" class="scrollspy" tabindex="0">
-            <div id="scrollspyHeading1" class="">
-                <h4>About</h4>
-            </div>
-            <div id="scrollspyHeading2" class="">
-                <h4>Experience</h4>
-            </div>
-            <div id="scrollspyHeading3" class="">
-                <h4>Education</h4>
-            </div>
         </div>
+    </nav>
+
+    <div data-bs-spy="scroll" data-bs-target="_navbar" data-bs-offset="0" class="scrollspy" tabindex="0">
+
+        <section id="scrollspyHeading1" class="resume-section">
+            <div class="profile-img">
+                <img src="images/profile.jpg" alt="profile" class="img-fluid rounded-circle mx-auto d-block">
+            </div>
+            <h1 class="fw-bold w-100 text-center">Jaden Straw</h1>
+        </section>
+
+        <section id="scrollspyHeading2" class="resume-section w-100 text-center">
+            <h4>ABOUT ME</h4>
+        </section>
+
+        <section id="scrollspyHeading3" class="resume-section w-100 text-center">
+            <h4>PORTFOLIO</h4>
+        </section>
+
+        <section id="scrollspyHeading4" class="resume-section w-100 text-center">
+            <h4>EDUCATION</h4>
+        </section>
+
     </div>
+
 </body>
 </html>
