@@ -87,16 +87,15 @@ h4 {
     line-height: 50px;
     text-align: center;
     margin-inline: 5px;
+    transition: width 0.5s ease;
 }
 
 .wrapper .button .icon {
-    font-size: 20px;
-    scale: 1.5;
+    font-size: 30px;
 }
 
 .wrapper .button:hover {
     width: 100px;
-    transition: 0.25s;
 }
 
 .card {
