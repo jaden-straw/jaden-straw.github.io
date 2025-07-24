@@ -35,6 +35,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#skills">SKILLS</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#certifications">CERTIFICATIONS</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -84,21 +87,26 @@
             <h4 class="text-center mb-4">ABOUT ME</h4>
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-md-6 mb-4">
+                    <div class="col-md-8 mb-4">
                         <div class="card">
                             <div class="card-body">
-                                <p class="card-text">
-                                    I am an aspiring, motivated, and detail-oriented software engineer with a passion
-                                    for creating efficient applications for unique and interesting use cases.
-                                    My journey in software development began during my gap year, where I applied various
-                                    skills and problem-solving techniques to solve real-world problems.
-                                    I am currently completing my final year of a Bachelor's Degree in Information
-                                    Technology at North-West University.
-                                    I am an eager, proactive leaner, continuously on a mission to widen my knowledge and
-                                    skill set.
+                                <h5 class="fw-bold">
+                                    Hey there!
+                                </h5>
+                                <p class="card-text text-justify-custom">
+                                    I'm Jaden Straw, a final-year IT student at North-West University, and an aspiring
+                                    software engineer with a strong passion for backend development and automation.
+                                    I love building things that solve real problems — whether it's a trading bot,
+                                    a data tool, or a specialised application. I'm always exploring new ways to improve how systems
+                                    work and interact.
                                 </p>
-                                <p class="card-text">
-                                    When I'm not coding, I enjoy hiking, running, and sightseeing.
+                                <p class="card-text text-justify-custom">
+                                    Away from the screen, I love staying active. You’ll often find me running, hiking new
+                                    trails, playing the occasional game of padel, or heading off to explore somewhere I’ve
+                                    never been. I believe balance fuels creativity, and I bring that mindset into my work
+                                    and life.
+
+                                    Welcome to my online CV — feel free to look around!
                                 </p>
                             </div>
                         </div>
@@ -110,7 +118,7 @@
             <h4 class="text-center mb-4">EDUCATION</h4>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 mb-4 mx-auto">
+                    <div class="col-md-8 mb-4 mx-auto">
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="card-title">BSc Information Technology</h5>
@@ -125,10 +133,10 @@
                                     <li>Artificial Intelligence & IT Developments</li>
                                     <li>Business & Communication</li>
                                 </ul>
-                                <p class="card-text mb-0">Project:</p>
+                                <p class="card-text mb-0">Projects:</p>
                                 <ul class="card-text">
-                                    <li>Cinema Ticket Booking System</li>
-                                    <li>IT Development Project (on-going)</li>
+                                    <li><a href="https://github.com/DevMasters-Group/MovieTopia">Cinema Ticket Booking System</a></li>
+                                    <li>IT Developments Project (on-going)</li>
                                 </ul>
                             </div>
                         </div>
@@ -146,10 +154,11 @@
                                 <h5 class="card-title">Web Developer Intern</h5>
                                 <h6 class="card-subtitle mb-2 text-muted">Stratusolve (Pty) Ltd</h6>
                                 <p class="card-text">December 2022 & July 2024</p>
-                                <ul class="card-text">
-                                    <li>Gained hands-on experience in Agile software development processes</li>
-                                    <li>Collaborated with cross-functional teams to deliver high-quality web applications using
-                                        NodeJS and SvelteKit</li>
+                                <ul class="card-text text-justify-custom">
+                                    <li>Worked in an Agile environment, contributing to high-quality web applications</li>
+                                    <li>Built and deployed frontend components using SvelteKit</li>
+                                    <li>Developed server-side functionality with NodeJS and RESTful APIs</li>
+                                    <li>Collaborated with cross-functional teams to meet project goals and timelines</li>
                                 </ul>
                             </div>
                         </div>
@@ -158,10 +167,11 @@
                         <div class="card h-100">
                             <div class="card-body">
                                 <h5 class="card-title">Freelance Projects</h5>
-                                <ul class="card-text">
-                                    <li>Market-Making TradeBot that is integrated with both the Luno and VALR exchanges</li>
-                                    <li>Automated Data Ingestion for Logistics Operations</li>
-                                    <li>Private Lesson Logging System</li>
+                                <h6 class="card-subtitle mb-2 text-muted">2022 – Present</h6>
+                                <ul class="card-text text-justify-custom">
+                                    <li>Market-Making TradeBot – Built a trading bot for Luno and VALR exchanges using API calls and WebSocket integration with Python and Docker on a self-hosted, Cloudflare Linux platform</li>
+                                    <li>Automated Data Ingestion for Logistics Operations – Created a turnkey web scraping solution using Beautiful Soup 4 and Django REST in Python with SvelteKit and PostgreSQL, automating third-party data consolidation and invoicing in Sage200 Evolution</li>
+                                    <li>Private Lesson Logging System (TrueIQ) – Developed a logging system to record subjects and hours for an independent education group to facilitate lesson invoicing using Python and PostgreSQL</li>
                                 </ul>
                             </div>
                         </div>
@@ -170,10 +180,11 @@
             </div>
         </section>
         <section id="skills" class="resume-section w-100">
-            <h4 class="text-center mb-4">SKILLS</h4>
+            <h4 class="text-center mt-5 mb-4">SKILLS</h4>
             <div class="container">
-                <div class="row">
-                    <div class="col-md-4 mb-4">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4 justify-content-center">
+                    <!-- Programming Languages -->
+                    <div class="col">
                         <div class="card h-100">
                             <div class="card-header text-center">
                                 Programming Languages
@@ -182,28 +193,33 @@
                                 <ul class="list-group list-group-flush">
                                     <li class="list-group-item">Python</li>
                                     <li class="list-group-item">Java</li>
-                                    <li class="list-group-item">JavaScript/ TypeScript</li>
+                                    <li class="list-group-item">JavaScript / TypeScript</li>
                                     <li class="list-group-item">C#</li>
+                                    <li class="list-group-item">C++</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 mb-4">
+
+                    <!-- Frameworks & Libraries -->
+                    <div class="col">
                         <div class="card h-100">
                             <div class="card-header text-center">
                                 Frameworks & Libraries
                             </div>
                             <div class="card-body">
                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">Django Rest</li>
-                                    <li class="list-group-item">Spring Boot (on-going)</li>
+                                    <li class="list-group-item">Django REST Framework</li>
+                                    <li class="list-group-item">Spring Boot (in progress)</li>
                                     <li class="list-group-item">SvelteKit</li>
-                                    <li class="list-group-item">NodeJS/ Express</li>
+                                    <li class="list-group-item">Node.js / Express</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 mb-4">
+
+                    <!-- Database Design & Management -->
+                    <div class="col">
                         <div class="card h-100">
                             <div class="card-header text-center">
                                 Database Design & Management
@@ -213,36 +229,60 @@
                                     <li class="list-group-item">PostgreSQL</li>
                                     <li class="list-group-item">MySQL</li>
                                     <li class="list-group-item">Microsoft SQL Server</li>
+                                    <li class="list-group-item">SQLite</li>
                                     <li class="list-group-item">Redis</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-md-4 mb-4">
+
+                    <!-- Cloud Services -->
+                    <div class="col">
                         <div class="card h-100">
                             <div class="card-header text-center">
-                                Cloud Services
+                                Cloud & Deployment
                             </div>
                             <div class="card-body">
                                 <ul class="list-group list-group-flush">
                                     <li class="list-group-item">Microsoft Azure</li>
-                                    <li class="list-group-item">Google Cloud SQL</li>
+                                    <li class="list-group-item">Google Cloud SQL / BigQuery</li>
+                                    <li class="list-group-item">Vercel (Frontend Deployment)</li>
+                                    <li class="list-group-item">Docker</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 mb-4">
+
+                    <!-- Tools & Automation -->
+                    <div class="col">
                         <div class="card h-100">
                             <div class="card-header text-center">
-                                Automation & Tools
+                                Tools & Automation
                             </div>
                             <div class="card-body">
                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">Excel (Expert)</li>
+                                    <li class="list-group-item">Excel (Advanced) & VBA Macros</li>
+                                    <li class="list-group-item">Web Scraping: Beautiful Soup 4 & Selenium</li>
                                     <li class="list-group-item">Slack Integration</li>
-                                    <li class="list-group-item">Web Scraping with Beautiful Soup 4 & Selenium</li>
+                                    <li class="list-group-item">Git, GitHub & GitHub Actions</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="certifications" class="resume-section w-100">
+            <h4 class="text-center mb-4">CERTIFICATIONS</h4>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 mb-4 mx-auto">
+                        <div class="card">
+                            <div class="card-body">
+                                <ul class="card-text">
+                                    <li>Golden Key Award Membership Certificate (2023)</li>
+                                    <li>Azure Security Engineer Associate Certificate (AZ-500) - Currently In progress</li>
+                                    <li>Excel on Steroids (March 2022)</li>
                                 </ul>
                             </div>
                         </div>
