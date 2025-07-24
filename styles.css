@@ -14,12 +14,14 @@ body {
 }
 
 #canvas1 {
+    /* fix the canvas in one place (non-scrollable)*/
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     z-index: -1;
+    /* background color that transitions from dark to a lighter inside*/
     background-image: radial-gradient(#000049, #000019);
     background-size: cover;
     background-position: center;
@@ -27,6 +29,7 @@ body {
 }
 
 .navbar {
+    /* smooth transition from solid to transparent and vice versa */
     transition: background-color 2s ease !important;
 }
 
@@ -80,6 +83,7 @@ h4 {
 }
 
 .button {
+    /* center the icon and button */
     display: inline-block;
     width: 50px;
     height: 50px;
@@ -95,6 +99,7 @@ h4 {
     font-size: 30px;
 }
 
+/* button width on hover property */
 .wrapper .button:hover {
     width: 100px;
 }
@@ -105,6 +110,10 @@ h4 {
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
     background-color: rgb(230, 230, 230);
     color: black;
+}
+
+.card:hover {
+    transform: scale(1.05);
 }
 
 .text-justify-custom {
@@ -118,8 +127,4 @@ h4 {
 
 .list-group-item:hover {
     background-color: rgb(225, 225, 225) !important;
-}
-
-.card:hover {
-    transform: scale(1.05);
 }
