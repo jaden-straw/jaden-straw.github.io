@@ -11,17 +11,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body class="">
+<!--load the javascript bundler to use the animation and navbar JavaScript files-->
     <script src="js/bootstrap.bundle.min.js"></script>
 
+<!--create the canvas for the background image animation and load the JavaScript for it-->
     <canvas id="canvas1"></canvas>
     <script src="animation.js"></script>
 
+<!--create the bootstrap navbar-->
     <nav id="navbar1" class="navbar navbar-expand-lg navbar-dark fixed-top bg-transparent">
         <div class="container-fluid">
             <a class="navbar-brand" href="#home">Jaden Straw</a>
+<!--            navbar collapse button-->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+<!--            the collapse menu with scrollspy nav links-->
             <div class="collapse navbar-collapse" id="navbarToggler">
                 <ul class="navbar-nav nav-underline ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
@@ -43,16 +48,18 @@
             </div>
         </div>
     </nav>
+<!--load the JavaScript for the navbar background color animation-->
     <script src="navbar.js"></script>
 
-    <div data-bs-spy="scroll" data-bs-target="#_navbar" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+<!--div for the main content with scroll properties-->
+    <div data-bs-spy="scroll" data-bs-target="#_navbar" data-bs-offset="0" class="" tabindex="0">
         <section id="home" class="resume-section">
             <div class="profile-img pb-2">
                 <img src="images/profile.jpg" alt="profile" class="img-fluid rounded-circle mx-auto d-block">
             </div>
             <h1 id="name" class="fw-bold text-center">Jaden Straw</h1>
             <h5 id="title" class="text-center mb-3">Aspiring Software Engineer</h5>
-
+<!--            buttons to connect and/or download the resume-->
             <div class="wrapper text-center">
                 <a href="https://github.com/jaden-straw" class="text-dark">
                     <div class="button">
@@ -84,11 +91,15 @@
                 </a>
             </div>
         </section>
+<!--        about me section-->
         <section id="aboutme" class="resume-section w-100">
             <h4 class="text-center mb-4">ABOUT ME</h4>
+<!--            container with breakpoints to account for increasing/decreasing screen sizes-->
             <div class="container">
                 <div class="row justify-content-center">
+<!--                    set the card width based on the column-->
                     <div class="col-md-8 mb-4">
+<!--                        create the abount me card-->
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="fw-bold">
@@ -106,7 +117,8 @@
                                     trails, playing the occasional game of padel, or heading off to explore somewhere I’ve
                                     never been. I believe balance fuels creativity, and I bring that mindset into my work
                                     and life.
-
+                                </p>
+                                <p class="card-text text-justify-custom">
                                     Welcome to my online CV — feel free to look around!
                                 </p>
                             </div>
@@ -115,9 +127,11 @@
                 </div>
             </div>
         </section>
+<!--        education section-->
         <section id="education" class="resume-section w-100">
             <h4 class="text-center mb-4">EDUCATION</h4>
             <div class="container">
+<!--                put cards in one row. cards will automatically stack when the break point is hit-->
                 <div class="row">
                     <div class="col-md-8 mb-4 mx-auto">
                         <div class="card">
@@ -127,7 +141,9 @@
                                 <p class="card-text mb-0">2023 - Present</p>
                                 <h6 class="card-subtitle mb-2 text-muted">Expected Graduation: December 2025</h6>
                                 <p class="card-text mb-0">Relevant Coursework:</p>
+<!--                                create a list-->
                                 <ul class="card-text">
+<!--                                    add a list item with bullet points-->
                                     <li>Programming & Software Development</li>
                                     <li>Data Analysis & Decision Support Systems</li>
                                     <li>Systems & Networks</li>
@@ -145,9 +161,11 @@
                 </div>
             </div>
         </section>
+<!--        work experience section-->
         <section id="experience" class="resume-section w-100">
             <h4 class="text-center mb-4">WORK EXPERIENCE</h4>
             <div class="container">
+<!--                put cards in one row. cards will automatically stack when the break point is hit-->
                 <div class="row">
                     <div class="col-md-6 mb-4">
                         <div class="card h-100">
@@ -155,7 +173,9 @@
                                 <h5 class="card-title">Web Developer Intern</h5>
                                 <h6 class="card-subtitle mb-2 text-muted">Stratusolve (Pty) Ltd</h6>
                                 <p class="card-text">December 2022 & July 2024</p>
+<!--                                create a list-->
                                 <ul class="card-text">
+<!--                                    add a list item with bullet points-->
                                     <li>Worked in an Agile environment, contributing to high-quality web applications</li>
                                     <li>Built and deployed frontend components using SvelteKit</li>
                                     <li>Developed server-side functionality with NodeJS and RESTful APIs</li>
@@ -169,7 +189,9 @@
                             <div class="card-body">
                                 <h5 class="card-title">Freelance Projects</h5>
                                 <h6 class="card-subtitle mb-2 text-muted">2022 – Present</h6>
+<!--                                create a list-->
                                 <ul class="card-text">
+<!--                                    add a list item with bullet points-->
                                     <li>Market-Making TradeBot – Built a trading bot for Luno and VALR exchanges using API calls and WebSocket integration with Python and Docker on a self-hosted, Cloudflare Linux platform</li>
                                     <li>Automated Data Ingestion for Logistics Operations – Created a turnkey web scraping solution using Beautiful Soup 4 and Django REST in Python with SvelteKit and PostgreSQL, automating third-party data consolidation and invoicing in Sage200 Evolution</li>
                                     <li>Private Lesson Logging System (TrueIQ) – Developed a logging system to record subjects and hours for an independent education group to facilitate lesson invoicing using Python and PostgreSQL</li>
@@ -180,9 +202,11 @@
                 </div>
             </div>
         </section>
+<!--        skills section-->
         <section id="skills" class="resume-section w-100">
             <h4 class="text-center mt-5 mb-4">SKILLS</h4>
             <div class="container">
+<!--                put cards in one row. cards will automatically stack when the break point is hit-->
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4 justify-content-center">
                     <!-- Programming Languages -->
                     <div class="col">
@@ -273,19 +297,18 @@
                 </div>
             </div>
         </section>
+<!--        certifications section-->
         <section id="certifications" class="resume-section w-100">
             <h4 class="text-center mb-4">CERTIFICATIONS</h4>
             <div class="container">
-                <div class="row">
-                    <div class="col-md-8 mb-4 mx-auto">
-                        <div class="card">
-                            <div class="card-body">
-                                <ul class="card-text">
-                                    <li>Golden Key Award Membership Certificate (2023)</li>
-                                    <li>Azure Security Engineer Associate Certificate (AZ-500) - Currently In progress</li>
-                                    <li>Excel on Steroids (March 2022)</li>
-                                </ul>
-                            </div>
+                <div class="col-md-8 mb-4 mx-auto">
+                    <div class="card">
+                        <div class="card-body">
+                            <ul class="card-text">
+                                <li>Golden Key Award Membership Certificate (2023)</li>
+                                <li>Azure Security Engineer Associate Certificate (AZ-500) - Currently In progress</li>
+                                <li>Excel on Steroids (March 2022)</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
