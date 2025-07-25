@@ -13,6 +13,24 @@
 <body class="">
 <!--load the javascript bundler to use the animation and navbar JavaScript files-->
     <script src="js/bootstrap.bundle.min.js"></script>
+<!--function to copy the email to the clipboard-->
+    <script>
+        function copyToClipboard() {
+            const copyText = document.getElementById("emailText");
+            navigator.clipboard.writeText(copyText.innerText);
+
+            // get the copy icons original state
+            const copyStatus = document.getElementById("copy-status");
+            const content = copyStatus.innerHTML;
+            // change the icon to show the item was copied
+            copyStatus.innerHTML = 'Copied! <i class="fa fa-check"></i>';
+
+            // set the icon back to original copy icon after 2 seconds
+            setTimeout(() => {
+                copyStatus.innerHTML = content;
+            }, 2000);
+        }
+    </script>
 
 <!--create the canvas for the background image animation and load the JavaScript for it-->
     <canvas id="canvas1"></canvas>
@@ -75,13 +93,11 @@
                         </div>
                     </div>
                 </a>
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jaden.straw03@gmail.com" class="text-danger">
-                    <div class="button">
-                        <div class="icon">
-                            <i class="fa fa-envelope"></i>
-                        </div>
+                <div class="button text-danger" data-bs-toggle="modal" data-bs-target="#emailModal" style="cursor: pointer;">
+                    <div class="icon">
+                        <i class="fa fa-envelope"></i>
                     </div>
-                </a>
+                </div>
                 <a href="files/jaden-straw-resume.pdf" download="jaden-straw-resume" class="text-dark">
                     <div class="button">
                         <div class="icon">
@@ -91,6 +107,29 @@
                 </a>
             </div>
         </section>
+<!--email modal-->
+        <div class="modal fade" id="emailModal" tabindex="-1" aria-labelledby="modelLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content modal-bg-color">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="modelLabel">Contact Me</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Feel free to copy my email address or compose an email directly.</p>
+<!--                        call the function to copy to the clipboard-->
+                        <p id="emailText" onclick="copyToClipboard()" class="bg-light p-2 rounded d-flex justify-content-between align-items-center" style="cursor: pointer;">
+                            <strong>jaden.straw03@gmail.com</strong>
+                            <span id="copy-status" class="ms-2"><i class="fa fa-copy"></i></span>
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <a href="mailto:jaden.straw03@gmail.com" class="btn btn-primary">Compose Email</a>
+                    </div>
+                </div>
+            </div>
+        </div>
 <!--        about me section-->
         <section id="aboutme" class="resume-section w-100">
             <h4 class="text-center mb-4">ABOUT ME</h4>

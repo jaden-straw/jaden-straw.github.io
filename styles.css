@@ -128,3 +128,11 @@ h4 {
 .list-group-item:hover {
     background-color: rgb(225, 225, 225) !important;
 }
+
+.modal-bg-color {
+    background-color: rgb(230, 230, 230) !important;
+}
+
+.text-field-color {
+    color: rgb(225, 225, 225) !important;
+}
