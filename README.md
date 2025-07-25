@@ -12,7 +12,8 @@ An online resume with a cool animated background.
 
 ## Tech
 
-This site uses HTML/CSS, JavaScript, Bootstrap 5, and Canvas for the animations. Font Awesome icons are used for social links.
+This site uses HTML/CSS, JavaScript, Bootstrap 5, and Canvas for the animations. Font Awesome icons are used for social links.  
+This project was created using a JetBrains Webstorm HTML5 template, which includes the Bootstrap CSS and JavaScript bundlers.
 
 ## Quick start
 
